@@ -1,0 +1,44 @@
+.container .hero-text {
+    margin-bottom: 40px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container .card-front, .container .card-back, .container .card-herr {
+    background-color: rgba(92, 92, 92, 0.8);
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    padding: 2.4rem 1rem;
+
+}
+
+.container .card-front:hover, .container .card-back:hover, .container .card-herr:hover {
+    transition: all .4s ease;
+    background-color: rgba(92, 92, 92, 0.2);
+        border: 1px solid #2ecc71;
+}
+
+.container .card-front h4, .container .card-back h4, .container .card-herr h4 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.card-info {
+    grid-gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info-detail {
+    display: flex;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 930px) {
+    .container .hero-text {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}

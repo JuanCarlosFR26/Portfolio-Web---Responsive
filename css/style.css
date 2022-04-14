@@ -29,6 +29,10 @@ body {
     position: relative;
 }
 
+.responsive-h1 {
+    display: none;
+}
+
 header {
     padding: 40px 0 30px;
     display: flex;
@@ -264,5 +268,22 @@ span {
 
     nav .nav-list.open {
         right: 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .hero {
+        width: 100vw;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .input {
+        display: none;
+    }
+
+    .responsive-h1 {
+        display: initial;
     }
 }
